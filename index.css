@@ -226,6 +226,11 @@ p {
   resize: none;
 }
 
+.grecaptcha-badge {
+  position: initial !important;
+  margin-bottom: 20px;
+}
+
 /* max-width */
 /* min-width */
 /* max-height */

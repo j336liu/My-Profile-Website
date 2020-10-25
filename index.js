@@ -29,18 +29,22 @@ const attachMobileNavButton = () => {
 
 const attachOnSubmitToForm = () => {
   const form = document.querySelector('form.contact');
-  form.addEventListener('submit', e => {
-    e.preventDefault();
-    const name = form.querySelector('[name="name"]').value;
-    const message = form.querySelector('[name="message"]').value;
-    window.open(`mailto:test@abc.com?subject=Feedback From ${name}&body=${message}`);
-  })
+  if (form) {
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const name = form.querySelector('[name="name"]').value;
+      const message = form.querySelector('[name="message"]').value;
+      window.open(`mailto:test@abc.com?subject=Feedback From ${name}&body=${message}`);
+    })
+  }
 }
 
 window.onContactFormSubmit = token => {
   console.log(token);
   const form = document.querySelector('form.contact');
-  form.submit();
+  if (form) {
+    form.submit();
+  }
 }
 
 window.onload = function() {
