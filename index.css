@@ -201,7 +201,7 @@ p {
 .contact-title {
   font-size: 35px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin: 20px 0px 35px 0px;
 }
 
 .contact-label {
@@ -217,6 +217,13 @@ p {
   font-size: 15px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.contact-message {
+  font-size: 15px;
+  font-family: 'Work Sans', sans-serif;
+  resize: none;
 }
 
 /* max-width */
